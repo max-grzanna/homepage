@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
-p, span {
+p, span, a {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
   color: #1F2937;
@@ -214,6 +214,35 @@ p, span {
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
+
+.imprint-wrapper {
+  flex: 1;
+  margin-top: 1rem;
+}
+
+.imprint-wrapper p {
+  margin-bottom: 1rem;
+}
+
+.button-back {
+  margin-top: 1rem;
+  background: none;
+  width: 6rem;
+  border-radius: 10px;
+  border-color: black;
+}
+.button-back a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.button-back img {
+  width: 1.5rem;
+}
+
 
 @media (max-width:481px)  { 
   
