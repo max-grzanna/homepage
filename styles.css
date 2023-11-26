@@ -1,38 +1,32 @@
 :root {
+  --main-paragraph-color: #404040;
   --main-lightgray-color: rgb(156, 163, 175);
   --main-background-color: rgb(243 244 246);
   --main-border-color: #E5E7EB;
 }
 
 @font-face {
-  font-family: 'Uber Move';
-  src: url('public/fonts/UberMove-Bold.woff2') format('woff2'),
-       url('public/fonts/UberMove-Bold.woff') format('woff');
+  font-family: 'Geist';
+  src: url('public/fonts/Geist-Bold.woff2') format('woff2'),
+       url('public/fonts/Geist-Bold.otf') format('otf');
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Uber Move';
-  src: url('public/fonts/UberMove-Regular.woff2') format('woff2'),
-       url('public/fonts/UberMove-Regular.woff') format('woff');
-  font-weight: 400;
+  font-family: 'Geist';
+  src: url('public/fonts/Geist-Medium.woff2') format('woff2'),
+       url('public/fonts/Geist-Medium.otf') format('otf');
+  font-weight: 500;
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Berkely Mono';
-  src: url('public/fonts/BerkeleyMono-Regular.woff2') format('woff2'),
-       url('public/fonts/BerkeleyMono-Regular.woff') format('woff');
-  font-weight: 400;
-  font-display: swap;
-}
 
 @font-face {
-  font-family: 'Berkely Mono';
-  src: url('public/fonts/BerkeleyMono-Bold.woff2') format('woff2'),
-       url('public/fonts/BerkeleyMono-Bold.woff') format('woff');
-  font-weight: 600;
+  font-family: 'Geist';
+  src: url('public/fonts/Geist-Regular.woff2') format('woff2'),
+       url('public/fonts/Geist-Regular.otf') format('otf');
+  font-weight: 400;
   font-display: swap;
 }
 
@@ -72,27 +66,26 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Uber Move', sans-serif;
+  font-family: 'Geist', sans-serif;
   font-weight: 600;
   letter-spacing: normal;
 }
 
 p, span, a {
-  font-family: 'Berkeley Mono', monospace;
+  font-family: 'Geist', monospace;
   font-weight: 400;
-  color: #1F2937;
+  color: var(--main-paragraph-color);
+  line-height: 1.75;
 }
 
 .intro-wrapper {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .intro-text {
-  flex-basis: 70%;
+  flex-basis: 75%;
 }
 
 .intro-container {
@@ -105,21 +98,23 @@ p, span, a {
 
 .intro-container h1 {
   position: relative;
-  font-size: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1;
-  padding-bottom: .5rem;
+  padding-bottom: 2rem;
   right: 3px;
 }
 
 .intro-container h2 {
-  font-family: 'Berkeley Mono', monospace;
-  font-size: .85rem;
+  font-family: 'Geist', sans-serif;
+  color: var(--main-paragraph-color);
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .intro-container p {
   margin-top: .5rem;
-  font-size: .85rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
 
@@ -169,21 +164,21 @@ p, span, a {
   display: flex;
   flex-direction: column;
   gap: .85rem;
+  color: var(--main-paragraph-color);
   margin-bottom: 2rem;
 }
 
 .footer-links-item {
   width: 100%;
-  font-family: 'Berkeley Mono', monospace;
+  font-family: 'Geist', sans-serif;
   font-size: .75rem;
   font-weight: 400;
   padding-bottom: .25rem;
-  /* border-bottom: 1px solid var(--main-border-color); */
 }
 
 .footer-links-item a {
   text-decoration: none;
-  color: black;
+  color:  #404040;;
 }
 
 .copyright {
