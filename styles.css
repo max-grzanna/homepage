@@ -263,7 +263,7 @@ p, span, a {
     width: 100%;
     flex-direction: column-reverse;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .intro-container {
@@ -271,7 +271,7 @@ p, span, a {
   }
 
   .intro-container h1 {
-    font-size: 2.75rem;
+    font-size: 1.5rem;
   }
 
   .intro-container p {
